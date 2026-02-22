@@ -1,0 +1,135 @@
+.attend-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 8%;
+  background: #f5f7fb;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+/* Search */
+.search-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  display: flex;
+  gap: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  max-width: 500px;
+}
+
+.search-card input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.search-card button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background: linear-gradient(135deg,#4e73df,#1cc88a);
+  color: white;
+  border: none;
+}
+
+/* Quiz */
+.quiz-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timer {
+  font-weight: bold;
+  color: #4e73df;
+}
+
+.timer.danger {
+  color: red;
+}
+
+/* Progress */
+.progress-bar {
+  height: 8px;
+  background: #eee;
+  border-radius: 10px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.progress-bar div {
+  height: 100%;
+  background: linear-gradient(135deg,#4e73df,#1cc88a);
+}
+
+/* Questions */
+.question-card {
+  margin-bottom: 20px;
+}
+
+.option {
+  display: block;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.option:hover {
+  background: #f1f5ff;
+}
+
+.option.selected {
+  background: #e3ebff;
+  font-weight: 600;
+}
+
+/* Submit */
+.submit-btn {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  border-radius: 30px;
+  background: linear-gradient(135deg,#4e73df,#1cc88a);
+  color: white;
+  border: none;
+}
+
+/* Result */
+.result-card {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.error-box {
+  background: #ffe5e5;
+  color: #c0392b;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+  .attend-page {
+    padding: 30px 5%;
+  }
+
+  .quiz-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

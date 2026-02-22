@@ -1,0 +1,80 @@
+/* ================= GLOBAL THEME SYSTEM ================= */
+
+:root {
+  --primary: #6C5CE7;
+  --secondary: #00CEC9;
+  --accent: #FD79A8;
+  --bg-light: #F5F7FB;
+  --dark: #1E1E2F;
+  --text-main: #2D3436;
+  --gradient-main: linear-gradient(135deg, #6C5CE7, #00CEC9);
+}
+
+/* ================= RESET ================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-light);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ================= GLOBAL PAGE WRAPPER ================= */
+
+.page-wrapper {
+  width: 100%;
+  max-width: 1100px;   /* better SaaS width */
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* ================= COMMON ELEMENTS ================= */
+
+img,
+input,
+textarea,
+select,
+button {
+  max-width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ================= TYPOGRAPHY ================= */
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* ================= SCROLLBAR (Optional Premium Touch) ================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gradient-main);
+  border-radius: 10px;
+}
+
+/* ================= MOBILE OPTIMIZATION ================= */
+
+@media (max-width: 430px) {
+  .page-wrapper {
+    padding: 40px 16px;
+  }
+}

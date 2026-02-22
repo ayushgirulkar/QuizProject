@@ -1,0 +1,190 @@
+/* ================= CREATE PAGE ================= */
+
+.create-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 60px 0;
+  background: var(--bg-light);
+}
+
+/* ================= HEADER ================= */
+
+.create-header {
+  margin-bottom: 40px;
+}
+
+.create-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.create-header p {
+  color: #666;
+  font-size: 15px;
+  margin-top: 6px;
+}
+
+/* ================= ERROR ================= */
+
+.error-box {
+  background: #ffe6f0;
+  color: #c0392b;
+  padding: 14px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+/* ================= FORM CARD ================= */
+
+.create-form {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(108, 92, 231, 0.08);
+  margin-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* gradient accent line */
+.create-form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: var(--gradient-main);
+}
+
+/* ================= GRID ================= */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+/* ================= INPUTS ================= */
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-group label {
+  font-weight: 500;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  transition: 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.1);
+}
+
+/* ================= TEXTAREA ================= */
+
+.full {
+  margin-top: 25px;
+}
+
+/* ================= BUTTON ================= */
+
+.generate-btn {
+  margin-top: 30px;
+  padding: 14px;
+  width: 100%;
+  border-radius: 30px;
+  background: var(--gradient-main);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  transition: 0.3s ease;
+  box-shadow: 0 12px 30px rgba(108, 92, 231, 0.25);
+}
+
+.generate-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(108, 92, 231, 0.35);
+}
+
+/* ================= RESULT CARD ================= */
+
+.result-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(108, 92, 231, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.result-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background: var(--gradient-main);
+}
+
+.pill {
+  background: var(--primary);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.preview-section {
+  margin-top: 25px;
+}
+
+.question-card {
+  margin-bottom: 25px;
+  padding: 18px;
+  border-radius: 14px;
+  background: #f3f4ff;
+  transition: 0.3s ease;
+}
+
+.question-card:hover {
+  background: #ececff;
+}
+
+.question-card ul {
+  padding-left: 20px;
+}
+
+.correct {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .create-form {
+    padding: 25px;
+  }
+
+  .create-header h1 {
+    font-size: 24px;
+  }
+}
